@@ -1,0 +1,2 @@
+module ActAsNotificable
+end
