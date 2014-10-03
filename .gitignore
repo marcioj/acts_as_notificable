@@ -1,5 +1,6 @@
 .bundle/
 .rspec
+tmp/
 log/*.log
 pkg/
 test/dummy/db/*.sqlite3
