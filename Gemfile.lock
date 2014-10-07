@@ -39,6 +39,7 @@ GEM
       rspec-rails (>= 2.2)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
+    coderay (1.1.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     hike (1.2.3)
@@ -46,9 +47,14 @@ GEM
     json (1.8.1)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
+    method_source (0.8.2)
     mime-types (2.3)
     minitest (5.4.2)
     multi_json (1.10.1)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -84,6 +90,9 @@ GEM
       rspec-mocks (~> 3.1.0)
       rspec-support (~> 3.1.0)
     rspec-support (3.1.1)
+    shoulda-matchers (2.7.0)
+      activesupport (>= 3.0.0)
+    slop (3.6.0)
     sprockets (2.12.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -106,5 +115,7 @@ PLATFORMS
 DEPENDENCIES
   act_as_notificable!
   ammeter (~> 1.1.2)
+  pry
   rspec-rails (~> 3.1.0)
+  shoulda-matchers (~> 2.7.0)
   sqlite3

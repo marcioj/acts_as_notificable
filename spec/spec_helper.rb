@@ -5,6 +5,8 @@ require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
 require "rspec/rails"
 require "ammeter/init"
+require "shoulda/matchers"
+require "pry"
 
 Rails.backtrace_cleaner.remove_silencers!
 
