@@ -24,11 +24,22 @@ RSpec.describe Notification, type: :model do
   end
 
   describe "#render" do
-    subject do
-      Notification.create_notification(:welcome)
+    context "with simple template rendering" do
+      subject do
+        Notification.create_notification(:welcome)
+      end
+
+      it { expect(subject.render).to include("Welcome to my world") }
     end
 
-    it { expect(subject.render).to include("Welcome to my world") }
+    context "with locals" do
+      subject do
+        Notification.create_notification(:hello, name: "dude")
+      end
+
+      it { expect(subject.render).to include("<h1>Hello dude</h1>") }
+      it { expect(subject.render).to include("<h3>The notification id is #{subject.id}</h3>") }
+    end
   end
 
 end
