@@ -6,6 +6,7 @@ require "rails/test_help"
 require "rspec/rails"
 require "ammeter/init"
 require "shoulda/matchers"
+require "database_cleaner"
 require "pry"
 
 Rails.backtrace_cleaner.remove_silencers!
