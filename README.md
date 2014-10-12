@@ -3,11 +3,11 @@
 
 [![Build Status][travis_badge]][travis]
 
-:warning: This is stil under development
+:warning: This is still under development
 
 # Instalation
 
-Add to your Gemfile:
+Add in your Gemfile:
 
 `gem 'act_as_notificable', github: 'marcioj/act_as_notificable`
 
