@@ -3,7 +3,7 @@ module ActAsNotificable
 
   module ClassMethods
     def act_as_notificable
-      has_many :notifications, inverse_of: "owner"
+      has_many :notifications, inverse_of: :owner, dependent: :destroy
     end
   end
 end
