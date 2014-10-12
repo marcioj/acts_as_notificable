@@ -5,9 +5,11 @@ class Notification < ActiveRecord::Base
 
   serialize :locals, Hash
 
-  def render
+  def render(options = {})
     locals.merge!(notification: self)
-    view.render(file: "notifications/#{template_name}", locals: locals)
+    render_options = { file: "notifications/#{template_name}", locals: locals }
+    render_options[:layout] = "layouts/" + options[:layout] if options.has_key?(:layout)
+    view.render(render_options)
   end
 
   def self.create_notification(template_name, locals = {})
