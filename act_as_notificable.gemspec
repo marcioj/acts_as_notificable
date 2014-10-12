@@ -7,11 +7,11 @@ require "act_as_notificable/version"
 Gem::Specification.new do |s|
   s.name        = "act_as_notificable"
   s.version     = ActAsNotificable::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActAsNotificable."
-  s.description = "TODO: Description of ActAsNotificable."
+  s.authors     = ["Marcio Junior"]
+  s.email       = ["marciojunior1991@gmail.com"]
+  s.homepage    = "https://github.com/marcioj/act_as_notificable"
+  s.summary     = "Add notifications for ActiveRecord objects"
+  s.description = "Add notifications for ActiveRecord objects"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
