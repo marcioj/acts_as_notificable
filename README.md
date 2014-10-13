@@ -7,7 +7,7 @@
 
 # Instalation
 
-Add in your Gemfile:
+Add in your Gemfile
 
 `gem 'act_as_notificable', github: 'marcioj/act_as_notificable`
 
