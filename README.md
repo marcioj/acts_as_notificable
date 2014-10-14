@@ -54,6 +54,24 @@ user.notifications << Notification.create_notification(:hello, message: "World")
 user.notifications.first.render # => "<h1>Hello World</h1>"
 ```
 
+You can also pass a layout, which will be lookup in *app/views/layouts* directory
+
+*app/views/layouts/notification_layout.html.erb*
+```
+<div class="notification-actions">
+  <%= link_to("Mark as read", ...) %>
+  <%= link_to("Remove this message", ...) %>
+</div>
+<%= yield %>
+```
+
+And then use `:layout` option to pass the layout name
+
+```
+notification.render(layout: "notification_layout")
+
+```
+
 # Contributing
 
 1. Fork it
