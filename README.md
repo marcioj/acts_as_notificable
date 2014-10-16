@@ -9,7 +9,7 @@
 
 Add in your Gemfile
 
-`gem 'act_as_notificable'
+`gem 'act_as_notificable'`
 
 And then run
 
