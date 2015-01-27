@@ -1,11 +1,11 @@
-module ActAsNotificable
+module ActsAsNotificable
   extend ActiveSupport::Concern
 
   module ClassMethods
-    def act_as_notificable
+    def acts_as_notificable
       has_many :notifications, inverse_of: :owner, dependent: :destroy
     end
   end
 end
 
-ActiveRecord::Base.send :include, ActAsNotificable
+ActiveRecord::Base.send :include, ActsAsNotificable

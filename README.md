@@ -1,4 +1,4 @@
-# ActAsNotificable
+# ActsAsNotificable
 > Add notifications for ActiveRecord objects
 
 [![Build Status][travis_badge]][travis]
@@ -9,7 +9,7 @@
 
 Add in your Gemfile
 
-`gem 'act_as_notificable'`
+`gem 'acts_as_notificable'`
 
 And then run
 
@@ -17,7 +17,7 @@ And then run
 
 To copy the `Notification` model to your application and create the migration use
 
-`rails generate act_as_notificable:install`
+`rails generate acts_as_notificable:install`
 
 And then migrate with
 
@@ -25,11 +25,11 @@ And then migrate with
 
 # Usage
 
-Add `act_as_notificable` for the model that you want to add notifications
+Add `acts_as_notificable` for the model that you want to add notifications
 
 ```
 class User < ActiveRecord::Base
-  act_as_notificable
+  acts_as_notificable
 end
 ```
 
@@ -80,5 +80,5 @@ notification.render(layout: "notification_layout")
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-[travis]: https://travis-ci.org/marcioj/act_as_notificable
-[travis_badge]: https://travis-ci.org/marcioj/act_as_notificable.svg?branch=master
+[travis]: https://travis-ci.org/marcioj/acts_as_notificable
+[travis_badge]: https://travis-ci.org/marcioj/acts_as_notificable.svg?branch=master

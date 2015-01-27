@@ -1,4 +1,4 @@
-require "generators/act_as_notificable/templates/migration"
+require "generators/acts_as_notificable/templates/migration"
 
 ActiveRecord::Migration.verbose = false
 ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"

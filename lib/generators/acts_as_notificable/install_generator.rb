@@ -1,6 +1,6 @@
 require "rails/generators/active_record/migration"
 
-module ActAsNotificable
+module ActsAsNotificable
   module Generators
     class InstallGenerator < Rails::Generators::Base
       include ActiveRecord::Generators::Migration

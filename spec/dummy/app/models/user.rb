@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  act_as_notificable
+  acts_as_notificable
 end

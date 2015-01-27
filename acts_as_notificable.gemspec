@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "act_as_notificable/version"
+require "acts_as_notificable/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "act_as_notificable"
-  s.version     = ActAsNotificable::VERSION
+  s.name        = "acts_as_notificable"
+  s.version     = ActsAsNotificable::VERSION
   s.authors     = ["Marcio Junior"]
   s.email       = ["marciojunior1991@gmail.com"]
-  s.homepage    = "https://github.com/marcioj/act_as_notificable"
+  s.homepage    = "https://github.com/marcioj/acts_as_notificable"
   s.summary     = "Add notifications for ActiveRecord objects"
   s.description = "Add notifications for ActiveRecord objects"
   s.license     = "MIT"

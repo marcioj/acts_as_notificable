@@ -1,5 +1,5 @@
 require "spec_helper"
-require "generators/act_as_notificable/templates/notification"
+require "generators/acts_as_notificable/templates/notification"
 
 RSpec.describe Notification, type: :model do
   describe "validations" do
